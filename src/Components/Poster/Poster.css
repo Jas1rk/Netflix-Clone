@@ -1,0 +1,19 @@
+.row {
+  color: aliceblue;
+  margin-left: 20px;
+}
+
+.poster {
+  padding: 20px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.poster::-webkit-scrollbar {
+  display: none;
+}
+.poster img {
+  max-height: 250px;
+  margin-right: 10px;
+}
