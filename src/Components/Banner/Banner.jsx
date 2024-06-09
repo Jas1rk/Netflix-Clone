@@ -11,7 +11,6 @@ const Banner = () => {
       .then((response) => {
         const movies = response.data.results;
         const randomMovie = movies[Math.floor(Math.random() * movies.length)];
-        console.log(randomMovie);
         setMovies(randomMovie);
       })
       .catch((error) => {
@@ -28,7 +27,9 @@ const Banner = () => {
       className="banner"
     >
       <div className="contant">
-        <h1 className="title">{movies ? movies.title : ""}</h1>
+        <h1 className="title">
+          {movies ? movies.title || movies.original_name : ""}
+        </h1>
         <div className="banner-buttons">
           <button className="button">Play</button>
           <button className="button">My list</button>

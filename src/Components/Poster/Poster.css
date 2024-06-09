@@ -13,7 +13,23 @@
 .poster::-webkit-scrollbar {
   display: none;
 }
-.poster img {
+.posterImage {
   max-height: 250px;
   margin-right: 10px;
+  cursor: pointer;
 }
+
+.smallPoster {
+  max-height: 150px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.posterImage:hover{
+  transform: scale(1.1);
+}
+
+.smallPoster:hover{
+  transform: scale(1.1);
+}
+
